@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css"rel="stylesheet" type="text/css">
+    <link href="normalize.css"rel="stylesheet" type="text/css">
+</head>
+<body class="body">
+    <main class="main">
+        <div class="form-box">
+            <h1 class="main-header">Application form</h1>
+                <form method="post" class="form-box" action="https://dev.cotenfrontend.pl" >
+
+     <!--Personal data fieldset-->
+
+                    <fieldset class="fieldset fieldset__personal-data">
+                        <legend class="fieldset__personal-data--header"><h2 class="fieldset-header">Personal data</h2></legend>
+                        <p><label for="firstName" class="fieldset__personal-data--first-name">Your first name:</p>
+                            <input class="input"
+                                required
+                                name="firstName"
+                                id="firstName"
+                                placeholder="first name"
+                                type="text"
+                                pattern="[A-Za-z]{1,32}">
+                        </label>
+
+                        <p><label for="lastName">Your last name:</p>
+                            <input class="input"
+                            required
+                            name="lastname"
+                            id="lastName"
+                            placeholder="last name"
+                            type="text"
+                            pattern="[A-Za-z]{1,32}">
+                        </label>
+
+                    <fieldset class="fieldset-sex">
+                        <legend><p>Sex:</p></legend>
+
+                        <p><label class="label-sex">
+                            <input class="dot"
+                            value="male"
+                            required
+                            name="sex"
+                            id="male"
+                            type="radio">Male
+                            </label></p>
+                        
+
+                        <p><label class="label-sex">
+                            <input class="dot"
+                            value="female"
+                            required
+                            name="sex"
+                            id="female"
+                            type="radio">Female
+                            </label></p>
+                    </fieldset>
+
+                        <p><label for="dayOfBirth">Day of birth:</p>
+                            <input class="input"
+                            value="dayOfBirth"
+                            required
+                            name="dayOfBirth"
+                            id="dayOfBirth"
+                            placeholder="day of birth"
+                            type="number"
+                            min="1"
+                            max="31">
+                        </label>
+                        <p><label for="monthOfBirth">Month of birth:</label></p>
+                            <select class="option"
+                            required
+                            name="monthOfBirth"
+                            id="monthOfBirth"
+                            placeholder="month of birth"
+                            value="monthOfBirth">
+                            <option class="option">January</option>
+                            <option class="option">February</option>
+                            <option class="option">March</option>
+                            <option class="option">April</option>
+                            <option class="option">May</option>
+                            <option class="option">June</option>
+                            <option class="option">July</option>
+                            <option class="option">August</option>
+                            <option class="option">September</option>
+                            <option class="option">October</option>
+                            <option class="option">November</option>
+                            <option class="option">December</option>
+                        </select>
+
+                        <p><label for="yearOfBirth">Year of birth:</p>
+                            <input class="input"
+                            required
+                            name="yearOfBirth"
+                            id="yearOfBirth"
+                            placeholder="year of birth"
+                            type="number"
+                            min="1890"
+                            max="2022">
+                        </label>
+                    </fieldset>
+                    
+                    
+     <!--Address fieldset <input type="submit" value="submit">-->
+
+                    <fieldset class="fieldset fieldset__address">
+                        <legend><h2 class="fieldset-header">Address</h2></legend>
+                        <label for="city">City:
+                            <p><input class="input"
+                            required
+                            name="city"
+                            id="city"
+                            placeholder="city"
+                            type="text"></p>
+
+                         <label for="street">Street:
+                            <p><input
+                                class="input"
+                            required
+                            name="street"
+                            id="street"
+                            placeholder="street"
+                            type="text"></p>
+
+                         <label for="houseNumber">House number:
+                            <p><input class="input"
+                            required
+                            name="houseNumber"
+                            id="houseNumber"
+                            placeholder="houseNumber"
+                            type="number"></p>
+                         
+                         <label for="apartmentNumber">Apartment number:
+                            <p><input class="input"
+                            name="apartmentNumber"
+                            id="apartmentNumber"
+                            placeholder="apartment number"
+                            type="number"></p>
+
+                        <label for="postalCode">Postal code:
+                            <p><input class="input"
+                            name="postalCode"
+                            id="postalCode"
+                            placeholder="postal code"
+                            type="text"
+                            pattern="[^\\d{2}[- ]{0,1}\\d{3}$]">
+                        </p>   
+                        </label>
+                    </fieldset>
+
+            <!--Contact fieldset-->
+
+            <fieldset class="fieldset">
+                <legend><h2 class="fieldset-header">Contact</h2></legend>
+                <label for="telephone">Telephone number:
+                    <p><input class="input"
+                        name="telephonenumber"
+                        id="telephonenumber"
+                        placeholder="telephone number"
+                        type="tel">
+                    </p>
+                </label>
+
+                <label for="email">E-mail address:
+                    <p><input class="input"
+                        name="emailAddress"
+                        id="emailAddress"
+                        placeholder="email address"
+                        type="email">
+                    </p>
+                </label>
+
+            </fieldset>
+            <div class="hj"><input type="submit" value="submit"></div>
+
+                </form>
+         
+    </main>
+    
+</body>
+</html>

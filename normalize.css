@@ -1,0 +1,49 @@
+html{
+    box-sizing: border-box;
+}
+*, *before, *after{
+    box-sizing:inherit;
+}
+.body{
+    background:#2C2141;
+    display:flex;
+    justify-content:center;
+    
+}
+.main{
+   width:40%;
+    background:#F8F8F8;
+    height:1500px;
+    padding:16px 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:32px;
+  
+}
+.main-header{
+    display:flex;
+    justify-content: center;
+}
+.fieldset{
+    display:flex;
+    flex-direction: column;
+    border-color:black;
+    
+   
+}
+.fieldset-sex{
+    border:none;
+    padding-left:0;
+    margin:0;
+}
+.fieldset-header{
+    color:orange;
+    
+}
+.hj{
+    
+    display:flex;
+    justify-content: center;
+    margin-top: 16px;;
+}
+
+
